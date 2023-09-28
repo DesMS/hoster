@@ -14,7 +14,6 @@
 		console.error(err);
 	};
 	window.addEventListener(`click`, async () => {
-		alert(`CLICK!`);
 		try {
 			if (`registerProtocolHandler` in navigator) {
 				await navigator.registerProtocolHandler(`web+edit`, `https://desms.github.io/hoster/?edit=%s`, `File Handler`);
