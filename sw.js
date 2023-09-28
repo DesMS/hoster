@@ -1,11 +1,3 @@
-const CACHE_NAME = 'cool-cache';
-
-// Add whichever assets you want to pre-cache here:
-const PRECACHE_ASSETS = [
-	`/assets/`,
-	`/src/`
-]
-
 if (workbox.navigationPreload.isSupported()) {
 	workbox.navigationPreload.enable();
 };
