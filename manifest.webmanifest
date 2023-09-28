@@ -1,7 +1,7 @@
 {
 	"short_name": "Notepad+",
 	"name": "Notepad+",
-	"start_url": "/",
+	"start_url": "/hoster",
 	"scope": ".",
 	"display": "standalone",
 	"display_override": ["fullscreen", "window-controls-overlay", "minimal-ui"],
