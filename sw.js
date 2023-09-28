@@ -6,6 +6,10 @@ const PRECACHE_ASSETS = [
 	`/src/`
 ]
 
+if (workbox.navigationPreload.isSupported()) {
+	workbox.navigationPreload.enable();
+};
+
 self.addEventListener(`fetch`, (e) => {
 	e.respondWith((async () => {
 		try {
