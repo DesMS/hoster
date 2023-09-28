@@ -8,7 +8,7 @@
 	};
 	try {
 		if (`registerProtocolHandler` in navigator) {
-			await navigator.registerProtocolHandler(`web+edit`, `https://desms.github.io/hoster/?edit=%s`, `File Handler`);
+			await navigator.unregisterProtocolHandler(`web+edit`, `https://desms.github.io/hoster/?edit=%s`, `File Handler`);
 		};
 	} catch (err) {
 		console.error(err);
